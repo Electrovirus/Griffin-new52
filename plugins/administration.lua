@@ -1660,15 +1660,15 @@ do
       if is_mod(msg, gid, uid) then
         -- Print group settings
         if matches[1] == 'group' and matches[2] == 'settings' then
-          local text = 'Settings for *'..msg.to.title..'*\n'
-                ..'*-* Arabic message = `'..data.lock.arabic..'`\n'
-                ..'*-* Lock group from bot = `'..data.lock.bot..'`\n'
-                ..'*-* Lock group name = `'..data.lock.name..'`\n'
-                ..'*-* Lock group photo = `'..data.lock.photo..'`\n'
-                ..'*-* Lock group member = `'..data.lock.member..'`\n'
-                ..'*-* Spam protection = `'..data.antispam..'`\n'
-                ..'*-* Sticker policy = `'..data.sticker..'`\n'
-                ..'*-* Welcome message = `'..data.welcome.to..'`\n'
+          local text = '🔩Settings for *'..msg.to.title..'*\n'
+                ..'*-* 📍Arabic message = `'..data.lock.arabic..'`\n'
+                ..'*-* 📍Lock group from bot = `'..data.lock.bot..'`\n'
+                ..'*-* 📍Lock group name = `'..data.lock.name..'`\n'
+                ..'*-* 📍Lock group photo = `'..data.lock.photo..'`\n'
+                ..'*-* 📍Lock group member = `'..data.lock.member..'`\n'
+                ..'*-* 📍Spam protection = `'..data.antispam..'`\n'
+                ..'*-* 📍Sticker policy = `'..data.sticker..'`\n'
+                ..'*-* 📌Welcome message = `'..data.welcome.to..'`\n'
           send_api_msg(msg, get_receiver_api(msg), text, true, 'markdown')
         end
 
