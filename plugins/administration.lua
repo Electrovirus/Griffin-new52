@@ -1669,6 +1669,7 @@ do
                 ..'*-* 📍Spam protection = `'..data.antispam..'`\n'
                 ..'*-* 📍Sticker policy = `'..data.sticker..'`\n'
                 ..'*-* 📌Welcome message = `'..data.welcome.to..'`\n'
+                ..'*-* 🌎Griffin V.2'`\n'
           send_api_msg(msg, get_receiver_api(msg), text, true, 'markdown')
         end
 
@@ -1979,7 +1980,6 @@ do
       '^!(sticker) (%a+)$',
       '^!(sudolist)$',
       '^!(unwhitelist) (chat) (%d+)$',
-      '^!(version)$',
       '^!(welcome) (%a+)$',
       '^!(whitelist) (%a+)$',
       '^!(whitelist) (chat) (%d+)$',
