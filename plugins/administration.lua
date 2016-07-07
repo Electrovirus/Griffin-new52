@@ -683,7 +683,7 @@ do
     end
     local rightnow = msg.date
     local last_time = tonumber(_config.mkgroup.founded) or 0
-    if os.difftime(rightnow, last_time) > 3600 then
+    if os.difftime(rightnow, last_time) > 600 then
       local uname = msg.from.username or msg.from.first_name
       _config.mkgroup = {founded = rightnow, founder = uname, title = title, gtype = g_type, uid = msg.from.peer_id}
       save_config()
@@ -691,7 +691,7 @@ do
       reply_msg(msg.id, 'Group '..title..' has been created.', ok_cb, true)
     else
       reply_msg(msg.id, 'I limit myself to create a group per hours.\n'
-          ..'Please try again in next one hour.', ok_cb, true)
+          ..'Please try again in next 10 minutes.', ok_cb, true)
     end
   end
 
