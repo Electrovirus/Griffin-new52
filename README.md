@@ -4,4 +4,4 @@
 
 Tnx to rizaumami💙  
 
-<p align="center">**Be Electrovirus**
+<p align="center">**By Electrovirus**
